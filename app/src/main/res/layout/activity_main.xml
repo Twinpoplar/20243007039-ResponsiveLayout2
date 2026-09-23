@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textLab1"
+        android:id="@+id/textLab2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintVertical_weight="1"
@@ -29,7 +29,7 @@
         android:gravity="center"
         android:textSize="20sp"
         android:text="Responsive Layout 1"
-        app:layout_constraintTop_toBottomOf="@+id/textLab1"
+        app:layout_constraintTop_toBottomOf="@+id/textLab2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/layoutFirst" />

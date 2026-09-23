@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Left Part of the layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -16,7 +17,7 @@
         app:layout_constraintEnd_toStartOf="@id/layoutRight">
 
         <TextView
-            android:id="@+id/textLab1"
+            android:id="@+id/textLab2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintVertical_weight="1"
@@ -24,7 +25,7 @@
             android:textColor="@color/white"
             android:background="@color/black"
             android:textSize="20sp"
-            android:text="Lab1"
+            android:text="Lab2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -37,11 +38,13 @@
             app:layout_constraintVertical_weight="1"
             android:gravity="center"
             android:textSize="20sp"
-            android:text="Responsive Layout 1"
-            app:layout_constraintTop_toBottomOf="@+id/textLab1"
+            android:text="Responsive Layout 2"
+            app:layout_constraintTop_toBottomOf="@+id/textLab2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/layoutFirst" />
+
+        <!-- 'This is my first' Part -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layoutFirst"
             android:layout_width="match_parent"
@@ -111,6 +114,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Right Part of the Layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -133,6 +137,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/layoutSecond"/>
+
+        <!-- Buttons: Change / Cancel -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
